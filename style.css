@@ -1,0 +1,116 @@
+:root {
+    --primary-gold: #d4af37;
+    --deep-space: #0b0d17;
+    --soft-white: #f4f4f4;
+    --glass: rgba(255, 255, 255, 0.07);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--deep-space);
+    color: var(--soft-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.8s ease-in-out;
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0;
+}
+
+.gold-text {
+    color: var(--primary-gold);
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+#timer {
+    font-size: clamp(3.5rem, 12vw, 5rem);
+    font-weight: 800;
+    color: var(--primary-gold);
+    margin: 15px 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.sub-heading {
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #aaa;
+}
+
+.memory-card {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 25px;
+    padding: 40px 30px;
+    margin-top: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+#wish-display {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6;
+    min-height: 80px;
+    transition: opacity 0.3s;
+}
+
+.wish-btn {
+    background: var(--primary-gold);
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.wish-btn:active {
+    transform: scale(0.95);
+}
+
+.replay-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #666;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+    margin: 25px 0;
+}
