@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 | Our Story</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="stars"></div>
+
+    <main id="countdown-screen" class="container">
+        <h2 class="sub-heading">Counting down to our best year yet...</h2>
+        <div id="timer">00:00:00</div>
+        <p class="label">Hours : Minutes : Seconds</p>
+    </main>
+
+    <main id="surprise-screen" class="container hidden">
+        <div id="surprise-section">
+            <h1 class="gold-text">Happy New Year, {Enter Name}! ❤️</h1>
+
+            <div class="memory-card">
+                <p id="wish-display">"Loading your first wish..."</p>
+                <hr>
+                <button class="wish-btn" onclick="getNewWish()">✨ Get Another Wish</button>
+            </div>
+
+            <p class="footer-note">I built this space to start 2026 with you.</p>
+            <button class="replay-btn" onclick="location.reload()">Replay the Magic</button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
